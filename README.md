@@ -1,23 +1,25 @@
 # CH32V-CLion-Tutorial
 
-这篇文章教你如何使用 CLion 搭建 CH32 RISC-V 的开发环境。
+作为一个被喷气脑子惯坏了的小朋友，给 CH32 RISC-V 芯片开发程序只能用 Eclipse 改的 MounRiver Studio 是非常难受的。
+
+于是就有了文章教你如何使用 CLion 搭建 CH32 RISC-V 的开发环境。
 
 ### 1. 准备工作
 
-- 准备好 CLion
-- 安装和安装 [MounRiver Studio](http://www.mounriver.com/download)，对于 Linux 和 macOS 可能还需单独下载其中的工具链
+- 购买和安装 CLion
+- 下载和安装 [MounRiver Studio](http://www.mounriver.com/download)，对于 Linux 和 macOS 似乎需要单独下载工具链
 
-> 以下将以 Windows 为例操作，其他操作系统类似
+> 以下将以 Windows 为例来操作，其他操作系统类似。
 
 ### 2. 设置环境变量
 
-在 PATH 中添加 MounRiver Studio 所附带的 RISC-V Embedded GCC（`MounRiver_Studio/toolchain/MounRiver_Studio/toolchain`）。
+在环境变量中添加 MounRiver Studio 所附带的 RISC-V Embedded GCC（`MounRiver_Studio/toolchain/MounRiver_Studio/toolchain`）。
 
 ![设置环境变量](./images/environment-variable.png)
 
 ### 3. CLion 设置
 
-- 设置 OpenOCD 为 `MounRiver_Studio/toolchain/OpenOCD/bin/openocd.exe`（Windows），其他操作系统就不带 .exe
+- 设置 OpenOCD 为 `MounRiver_Studio/toolchain/OpenOCD/bin/openocd.exe`
 
 ![设置 OpenOCD](./images/setup-openocd.png)
 
