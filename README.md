@@ -4,6 +4,8 @@
 
 于是就有了文章教你如何使用 CLion 搭建 CH32 RISC-V 的开发环境。
 
+<del>你甚至可以一次都不打开 MounRiver Studio。</del>
+
 ### 1. 准备工作
 
 - 购买和安装 CLion
@@ -25,7 +27,7 @@
 
 ### 4. 编译及烧录
 
-1. 使用 MounRiver Studio 建立工程，无需进行编译，**这步之后无需再使用 MounRiver Studio**
+1. 使用 MounRiver Studio 建立工程，无需进行编译，**这步之后无需再使用 MounRiver Studio**（MounRiver Studio 建立工程时所用的模板在 `MounRiver_Studio/template/wizard` 中，直接解压出来用应该也是没问题的）
 2. 复制本项目中的 `CMakeLists.txt` 到建立的工程中
 3. 如果你的芯片不是 CH32V307，需修改其中的 `"Startup/startup_ch32v30x_D8C.S"` 到你使用的芯片对应的文件
 4. 使用 CLion 打开项目
